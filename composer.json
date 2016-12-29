@@ -1,15 +1,16 @@
 {
     "name": "ella7/myq-api-client",
     "description": "Basic interfact for accessing MyQ webservers to get status and control MyQ connected devices",
+    "license": "MIT",
     "type": "library",
-    "license": "MIT"
-        "require": {
-        "guzzlehttp/guzzle": "~6.0"
-    },
     "authors": [
         {
             "name": "ryanpacker",
             "email": "ryan.packer@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    
 }
