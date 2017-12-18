@@ -85,7 +85,7 @@ class ApiClient
         $response = $this->client->request('POST', self::SINGLE_DEVICE_PATH, [
             'headers'  => self::headersForApiRequests(),
             'query'   => [
-                'myQDeviceId'       => $device_id,
+                'SerialNumber'       => $device_id,
                 'brandName'         => 'Liftmaster'
             ]
         ]);
@@ -118,7 +118,7 @@ class ApiClient
         $response = $this->client->request('POST', self::TRIGGER_PATH, [
             'headers'       => self::headersForApiRequests(),
             'form_params'   => [
-                'myQDeviceId'       => $device_id,
+                'SerialNumber'      => $device_id,
                 'attributename'     => $attribute_name,
                 'attributevalue'    => $attribute_value    
             ]
